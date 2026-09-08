@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FaShieldAlt,
   FaTachometerAlt,
@@ -10,6 +11,15 @@ import {
 } from "react-icons/fa";
 
 function Sidebar() {
+  const [activeTab, setActiveTab] = useState("dashboard");
+
+  const handleNavClick = (tab, targetId) => {
+    setActiveTab(tab);
+    if (targetId) {
+      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <aside className="sidebar">
       <div>
@@ -33,37 +43,53 @@ function Sidebar() {
         {/* ================= MENU ================= */}
 
         <nav>
-
-          <div className="menu-item active">
+          <div
+            className={`menu-item ${activeTab === "dashboard" ? "active" : ""}`}
+            onClick={() => handleNavClick("dashboard", "dashboard-metrics-section")}
+          >
             <FaTachometerAlt />
             <span>Dashboard</span>
           </div>
 
-          <div className="menu-item">
+          <div
+            className={`menu-item ${activeTab === "incidents" ? "active" : ""}`}
+            onClick={() => handleNavClick("incidents", "incident-form-section")}
+          >
             <FaExclamationTriangle />
-            <span>Incidents</span>
+            <span>New Incident</span>
           </div>
 
-          <div className="menu-item">
+          <div
+            className={`menu-item ${activeTab === "reports" ? "active" : ""}`}
+            onClick={() => handleNavClick("reports", "incident-report-section")}
+          >
             <FaFileAlt />
-            <span>Reports</span>
+            <span>Incident Report</span>
           </div>
 
-          <div className="menu-item">
+          <div
+            className={`menu-item ${activeTab === "email" ? "active" : ""}`}
+            onClick={() => handleNavClick("email", "incident-report-section")}
+          >
             <FaEnvelope />
-            <span>Email Center</span>
+            <span>Broadcast Alert</span>
           </div>
 
-          <div className="menu-item">
+          <div
+            className={`menu-item ${activeTab === "audit" ? "active" : ""}`}
+            onClick={() => handleNavClick("audit", "incident-report-section")}
+          >
             <FaHistory />
-            <span>Audit Logs</span>
+            <span>Timeline Logs</span>
           </div>
 
-          <div className="menu-item">
+          <div
+            className={`menu-item ${activeTab === "settings" ? "active" : ""}`}
+            onClick={() => handleNavClick("settings", null)}
+          >
             <FaCog />
             <span>Settings</span>
           </div>
-
         </nav>
 
         {/* ================= LIVE SECURITY ================= */}

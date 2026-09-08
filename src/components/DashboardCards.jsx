@@ -34,7 +34,7 @@ function DashboardCards() {
   ];
 
   return (
-    <div className="cards">
+    <div className="dashboard-cards" id="dashboard-metrics-section">
       {cards.map((card, index) => (
         <div className="card" key={index}>
           <div

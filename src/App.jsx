@@ -33,11 +33,25 @@ function App() {
             </p>
 
             <div className="hero-buttons">
-              <button className="primary-btn">
+              <button
+                className="primary-btn"
+                onClick={() => {
+                  document
+                    .getElementById("incident-form-section")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 Generate Report
               </button>
 
-              <button className="secondary-btn">
+              <button
+                className="secondary-btn"
+                onClick={() => {
+                  document
+                    .getElementById("dashboard-metrics-section")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 View Dashboard
               </button>
             </div>
