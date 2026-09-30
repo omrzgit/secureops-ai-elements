@@ -180,6 +180,11 @@ Passionate about Cybersecurity, SOC Operations, Network Security, Digital Forens
 
 - 💻 GitHub: https://github.com/asmakhann1956-hue
 - 📧 Email: asmahhkhhann@gmail.com
+
+### Omer Muneer (Contributor)
+
+BS Computer Science Student at Szabist University, Isb Campus
+
 ## ⭐ Support
 
 If you found this project useful, consider giving it a ⭐ on GitHub.
