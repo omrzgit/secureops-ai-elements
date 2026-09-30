@@ -170,20 +170,10 @@ If you'd like to improve SecureOps AI:
 
 ---
 
-## 👨‍💻 Author
+## 👥 Authors & Acknowledgements
 
-### Asma Khan Pathan
-
-BS Cyber Security Student at Air University, Multan Campus
-
-Passionate about Cybersecurity, SOC Operations, Network Security, Digital Forensics, and Blue Teaming.
-
-- 💻 GitHub: https://github.com/asmakhann1956-hue
-- 📧 Email: asmahhkhhann@gmail.com
-
-### Omer Muneer (Contributor)
-
-BS Computer Science Student at Szabist University, Isb Campus
+- **Asma ([@asmakhann1956-hue](https://github.com/asmakhann1956-hue))** (Author) 
+- **Omer ([@omrzgit](https://github.com/omrzgit))** (Contributor)
 
 ## ⭐ Support
 
